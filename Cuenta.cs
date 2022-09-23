@@ -6,8 +6,6 @@ namespace Banco
         CajeroAutomatico = 2
     }
 
-    
-
     public class Cuenta
     {
         private TipoExtraccion Cajero;
@@ -33,7 +31,15 @@ namespace Banco
 
         public void Extraccion(int monto, TipoExtraccion Cajero)
         {
+            
+        }
 
+        public class CajaAhorroPesos : Cuenta 
+        {
+            public void override Extraccion(int monto, TipoExtraccion Cajero)
+            {
+            
+            }
         }
     } 
 }
