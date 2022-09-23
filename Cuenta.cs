@@ -29,18 +29,19 @@ namespace Banco
             return Saldo;
         }
 
-        public void Extraccion(int monto, TipoExtraccion Cajero)
+        public virtual void Extraccion(int monto, TipoExtraccion Cajero)
         {
             
         }
 
-        public class CajaAhorroPesos : Cuenta 
-        {
-            public void override Extraccion(int monto, TipoExtraccion Cajero)
-            {
-            
-            }
-        }
     } 
+    
+    public class CajaAhorroPesos : Cuenta 
+    {
+        public override void Extraccion(int monto, TipoExtraccion Cajero)
+        {
+        
+        }
+    }
 }
 
